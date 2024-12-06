@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+      <style type="text/css">
+     		 body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            line-height: 1.4;
+        } 
+				h1, h2, h3, h4, h5, p {
+					margin: 0px;
+				}
+        .text-sm {
+            font-size: 10px;
+        }
+        .container{
+            width: 100%;
+        }
+        .logo{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 120px;
+            display: inline-block;
+        }
+        .logo img{
+            width: 150px;
+        }
+       
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+            border:1px solid grey;
+            margin-bottom: 10px;
+
+        }
+        table th{
+            font-size: 13px;
+            font-weight: 700;
+            text-align: left;
+            border-bottom: 1px solid grey;
+            /*padding: 5px;*/
+            background-color:#f9f9f9;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table td{
+           vertical-align: top;
+           padding:5px;
+        }
+        table th {
+					padding: 5px;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+        .table-top{
+            margin-bottom: 15px;
+        }
+        .pdesc {
+            font-size: 8px;
+            margin-top: 8px;
+        }
+        .logo-bottom {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .invoicedetails {
+        	margin-top: 45px;
+        }
+        .compname {
+        	font-size: 14px;
+        }
+        .fornm {
+        	margin-top: 30px;
+        	margin-bottom: 50px;
+        	text-align: right;
+        }
+        .amountwords {
+        	margin-top: 30px;
+        }
+        .authsign {
+        	text-align: right;
+        }
+        .table-amount tr th:last-child {
+					text-align: right;
+					padding-right: 10px;
+        }
+        .table-amount tr td:last-child {
+					text-align: right;
+					padding-right: 10px;
+        }
+        .link {
+        	text-align: center;
+        	font-size: 12px;
+        }
+  		</style>
+</head>
+<body>
+	<div class="container">
+
+		<table>
+			<tr>
+				<td width="48%">
+					<h1>TAX INVOICE</h1>
+					<p></p>
+					<p class="invoicedetails">Invoice No. # {{$order['invoice_no']}}<br>
+					Invoice Date : {{$order['created_at']->todateString()}}</p>
+				</td>
+				<td>
+					<h2>N.M. EXPORTS </h2>
+					<p class="compname">(A unit of Roses & Angels Private Limited) </p>
+					<p>Srijan Industrial and Logistics Park,<br>
+					 N.H.-6 Bombay Road, Near Saraswati Bridge,<br> 
+					 Howrah, West Bengal, PIN - 711302<br>
+					 GSTIN - 19AAJCR8808D1Z3<br>
+					 PAN - AAJCR8808D</p>
+				</td>
+			</tr>
+		</table>
+
+
+		<table>
+			<thead>
+				<tr>
+					<th><h3>Order Date: {{Carbon::parse($order->created_at)->toFormattedDateString()}}</h3></th>
+					<th><h3>Order Status : ({{$order['status']}})</h3></th>
+				</tr>
+				<tr>
+					<th><h3>Billing Details:</h3></th>
+					<th><h3>Shipping Details:</h3></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<p><strong>{{ $order->full_name }}</strong><br>
+							{{ $order->addr_line1 }}, {{ $order->addr_line2 }}<br>
+						{{ $order->city }}, {{ $order->state }}, {{ $order->country }}</p>
+					</td>
+					<td>
+						<p><strong>{{ $order->s_full_name }}</strong><br>
+							{{ $order->s_addr1 }}, {{ $order->s_addr2 }}<br>
+							{{ $order->s_city }} - {{ $order->s_pin }}<br>
+							 {{ $order->s_ph ? 'Contact No:'.$order->s_ph : null }}</p>
+							
+					</td>
+				</tr>
+				<tr>
+					<td>Place of Supply: {{ $order->state }}</td>
+					<td>Place of Delivery: {{ $order->s_state }}</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table>
+			<thead>
+				<tr>
+					<th><h3>Payment Method</h3></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Online</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="table-amount">
+			<thead>
+				<tr>
+					<th><h3>Product</h3></th>
+					<th><h3>HSN</h3></th>
+					<th><h3>Unit Price(Per Box)</h3></th>
+					<th><h3>Qty.</h3></th>
+					<th><h3>Amount</h3></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach($order->orderProducts as $orderProduct)
+				<tr>
+					<td>
+					    <p>{{ $orderProduct->stock->product->name }}</p>
+						<p>Type 1 Community Mask</p>
+						<p>SKU: {{$orderProduct->stock->sku}}</p>
+					</td>
+					<td>{{$orderProduct->stock->hsn}}</td>
+					<td>Rs.{{$orderProduct->price}}</td>
+					<td>{{$orderProduct->qty}}</td>
+					<td>Rs.{{$orderProduct->price * $orderProduct->qty}}</td>
+				</tr>
+				@endforeach
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="2"><strong>Taxable Amount</strong></td>
+					<td>Rs.{{ round(($order->gross_amt/105)*100,2)}}</td>
+				</tr>
+				@if($order->discount_amt > 0)
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Coupon Discount: </td>
+                        <td>Rs.{{$order->discount_amt}}</td>
+                    </tr>
+                @endif
+				@if($order->s_state == 'West Bengal')
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="2">CGST @2.5%</td>
+					<td>Rs.{{ round(0.025*(round(($order->gross_amt/105)*100,2)),2) }}</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="2">SGST @2.5%</td>
+					<td>Rs.{{ round(0.025*(round(($order->gross_amt/105)*100,2)),2) }}</td>
+				</tr>
+				@else
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="2">IGST @5%</td>
+					<td>Rs.{{ round(0.05*(round(($order->gross_amt/105)*100,2)),2) }}</td>
+				</tr>
+				@endif
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="2">Shipping & Handling Charges</td>
+					<td>Included</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="2"><strong>Total Amount</strong></td>
+					<td>Rs.{{$order->net_amt}}</td>
+					 <!--<br> (round of {{ round($order->net_amt - ((round(($order->gross_amt/105)*100,2) + round(0.05*(round(($order->gross_amt/105)*100,2)),2))),3) }} ) -->
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="3">
+						<p class="fornm"><strong>For N.M. EXPORTS</strong> (A unit of Roses & Angels Pvt. Ltd.)</p>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td colspan="3" style="margin-top:5px;">
+						<p class="authsign" style="margin-top: -41px;"><img src="{{ asset('front-end/sign.jpg') }}"style="width:98px;"><br> <strong>Authorized Signatory</strong></p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<p class="amountwords" style="text-transform: capitalize;"><strong>Amount in Words: {{$wrd}} Only</strong></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p>Disclaimer : Non-surgical and Non-medical face mask</p>
+
+		<div class="logo-bottom">
+            <img src="{{ asset('front-end/img/logo-dark.jpg') }}" alt="logo" class="logo">
+            <p class="link">www.maskare.in</p>
+        </div>
+
+    
+
+	</div>
+
+    
+</body>
+</html>

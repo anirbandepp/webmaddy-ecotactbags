@@ -1,0 +1,1 @@
+<p> Your Verification Code is <strong>{{$code}}</strong></p>

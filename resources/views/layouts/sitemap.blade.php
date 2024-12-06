@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.ecotactbags.com/</loc>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/admin-login</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/terms</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/privacy</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/about-us</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-products/packaging</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-products/storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-products/packaging-equipment</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-products/accessories</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/sustainablity</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/initiatives</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/globe</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/my-cart</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/contact-us</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/packaging/multilayered-hermetic-storage-bags</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/packaging/troiseal-bags</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/packaging/multilayered-hermetic-sampler-bags</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/packaging/sterile-vacuum-bags</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/storage/ship-shield-hermetic-container-liners</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/storage/hermetic-fibc-bags</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/packaging/supergreen-40</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/faq</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/refunds-and-returns</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/storage/multilayered-hermetic-storage-bags</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/packaging-equipment/ecovac-20-2</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/packaging-equipment/ecovac-50</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/accessories/add-ons-high-quality-corrugated-boxes</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/eco-product/accessories/add-ons-metal-detectable-cable-ties</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/north-america/ecotact-recycle-box</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/australia</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/coming_soon</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/why-the-right-green-coffee-packaging-is-critical-for-a-good-cup-of-coffee?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/select-the-best-packaging-solution-for-green-coffee-and-food-grains?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/what-exactly-are-coffee-bags-how-can-you-use-them?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/keep-the-freshness-of-your-grains-intact-with-sampler-bags?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/do-you-know-what-keeps-your-coffee-fresh?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/home-coffee-roasting-storing-your-green-coffee-beans?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-introduces-specially-curated-eco-friendly-hermetic-packaging-bags-with-triple-protection-for-small-roasters-home-roasters-and-barista-owners?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/5-ways-through-which-9-layer-packaging-keeps-the-quality-of-food-grains-intact?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/words-from-asias-first-lady-of-coffee?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/industry-insights-from-samuel-coto?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/qa-with-kyle-bellinger?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/conversations-over-coffee-with-hendra-taruli-directoropal-coffee?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-facets-of-coffee-production-with-mrcarlos-melen-ceo-good-coffee-farms?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/honey-processing-and-natural-processing-of-green-coffee-using-ecotact?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-launches-a-recycling-and-sustainable-initiative?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-specialty-coffee?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/coffee-fermentation-and-their-processes?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/know-your-cocoa-with-uncommon-cacao?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/what-is-specialty-coffee?category=All</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/home-coffee-roasting-storing-your-green-coffee-beans?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-introduces-specially-curated-eco-friendly-hermetic-packaging-bags-with-triple-protection-for-small-roasters-home-roasters-and-barista-owners?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/5-ways-through-which-9-layer-packaging-keeps-the-quality-of-food-grains-intact?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/words-from-asias-first-lady-of-coffee?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/industry-insights-from-samuel-coto?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/qa-with-kyle-bellinger?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/conversations-over-coffee-with-hendra-taruli-directoropal-coffee?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-facets-of-coffee-production-with-mrcarlos-melen-ceo-good-coffee-farms?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/honey-processing-and-natural-processing-of-green-coffee-using-ecotact?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-launches-a-recycling-and-sustainable-initiative?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-specialty-coffee?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/coffee-fermentation-and-their-processes?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/what-is-specialty-coffee?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/home-coffee-roasting-storing-your-green-coffee-beans?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-introduces-specially-curated-eco-friendly-hermetic-packaging-bags-with-triple-protection-for-small-roasters-home-roasters-and-barista-owners?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/5-ways-through-which-9-layer-packaging-keeps-the-quality-of-food-grains-intact?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-launches-a-recycling-and-sustainable-initiative?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/know-your-cocoa-with-uncommon-cacao?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-introduces-specially-curated-eco-friendly-hermetic-packaging-bags-with-triple-protection-for-small-roasters-home-roasters-and-barista-owners?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/5-ways-through-which-9-layer-packaging-keeps-the-quality-of-food-grains-intact?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/words-from-asias-first-lady-of-coffee?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/industry-insights-from-samuel-coto?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/qa-with-kyle-bellinger?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/conversations-over-coffee-with-hendra-taruli-directoropal-coffee?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-facets-of-coffee-production-with-mrcarlos-melen-ceo-good-coffee-farms?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/honey-processing-and-natural-processing-of-green-coffee-using-ecotact?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-launches-a-recycling-and-sustainable-initiative?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-specialty-coffee?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/coffee-fermentation-and-their-processes?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/know-your-cocoa-with-uncommon-cacao?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/5-ways-through-which-9-layer-packaging-keeps-the-quality-of-food-grains-intact?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/words-from-asias-first-lady-of-coffee?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/industry-insights-from-samuel-coto?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/honey-processing-and-natural-processing-of-green-coffee-using-ecotact?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/ecotact-launches-a-recycling-and-sustainable-initiative?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/coffee-fermentation-and-their-processes?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/know-your-cocoa-with-uncommon-cacao?category=coffee</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/what-is-specialty-coffee?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/coffee-fermentation-and-their-processes?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-specialty-coffee?category=cocoa</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/what-is-specialty-coffee?category=storage</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/what-is-specialty-coffee?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/know-your-cocoa-with-uncommon-cacao?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://www.ecotactbags.com/blog-inside/exploring-specialty-coffee?category=news</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

@@ -1,0 +1,185 @@
+<?php
+
+
+// Authentication Routes...
+Route::group(['middleware' => ['guest']], function () {
+    Route::get('/admin-login', 'Auth\AdminLoginController@showLoginForm')->name('adminLogin');
+    Route::post('/admin-login', 'Auth\AdminLoginController@login');
+    Route::get('/account/login', 'Auth\LoginController@showLoginForm')->name('login');
+    Route::post('/account/login', 'Auth\LoginController@login');
+
+});
+
+/* Auth Common Routes */
+Route::group(['middleware' => ['auth']], function () {
+    /* Logout Page */
+        Route::post('admin/logout', 'Auth\AdminLoginController@logout')->name('adminLogout');
+	/* Change Password Page */
+        Route::post('/post-change-pwd','HomeController@changePassword')->name('changePassword');
+    
+});
+
+Route::namespace('Admin')->prefix('admin-modules')->middleware(['auth','role:Admin'])->group(function () {
+
+	/* Dashboard */
+        Route::get('/dashboard','AdminController@adminDashboard')->name('adminDashboard');
+    /* Settings */
+    	Route::prefix('settings')->group(function ()
+    	{
+	    	//Attributes
+	    	Route::get('attributes/{attribute?}', 'SettingController@allAttribute')->name('allAttribute');
+	    	Route::post('post/attribute/{attribute?}', 'SettingController@postAttribute')->name('postAttribute');
+
+	    	Route::group( [ 'prefix' => 'attribute/{attributeId}/', 'middleware' => 'setAttribute'], function()
+			{
+		    	//Attribute Values
+		    	Route::get('values/{attributeValue?}', 'SettingController@attributeValues')->name('attributeValues');
+		    	Route::post('post/value/{attributeValue?}', 'SettingController@postAttributeValue')->name('postAttributeValue');
+		    });
+
+	    	//Taxes
+	    	Route::get('tax-slabs/{taxSlab?}', 'SettingController@getTaxSlabs')->name('getTaxSlabs');
+	    	Route::post('post/tax-slab/{taxSlab?}', 'SettingController@postTaxSlabs')->name('postTaxSlabs');
+
+	    	//Delivary services
+	    	Route::get('delivery/services/{deliveryService?}', 'SettingController@getDelivaryService')->name('getDelivaryService');
+	    	Route::post('post/delivery/services/{deliveryService?}', 'SettingController@postDelivaryService')->name('postDelivaryService');
+
+	    	//Sizes
+	    	Route::get('sizes/{size?}', 'SettingController@getSizes')->name('getSizes');
+	    	Route::post('post/size/{size?}', 'SettingController@postSizes')->name('postSize');
+
+	    	//Categories
+	    	Route::get('categories/{category?}', 'SettingController@getCategory')->name('allCategories');
+			Route::post('post/category/{category?}', 'SettingController@postCategory')->name('postCategory');
+
+			//Shipping Charges
+	    	Route::get('shipping-charges/{ShippingCharge?}', 'SettingController@getShippingCharges')->name('getShippingCharges');
+	    	Route::post('post/shipping-charges/{ShippingCharge?}', 'SettingController@postShippingCharge')->name('postShippingCharge');
+	    });
+	/* User management */
+		Route::resource('customers-management','UserController');
+		Route::post('customers-management/address/update/{userAddressId}','UserController@userAddressUpdate')->name('userAddressUpdate');
+		Route::post('customers-management/{customer}/create-token/{token?}','UserController@createToken')->name('createToken');
+	/* Product management */
+		Route::resource('products', 'ProductController', [
+		  	'only' => ['index','create', 'store','edit', 'update','destroy']
+		]);
+		Route::post('product/{product}/featured/update/','ProductController@updateFeaturedProduct')->name('updateFeaturedProduct');
+		Route::post('post-bulk/product/changes','ProductController@postBulk')->name('postBulk');
+
+		Route::group( [ 'prefix' => 'product/{productId}/', 'middleware' => 'checkProduct' ], function()
+		{
+			Route::resource('stock', 'ProductStockController', [
+			  'only' => ['index', 'store', 'update']
+			]);
+
+			Route::resource('images','ProductImageController');
+			Route::get('make-base/image/{image}','ProductImageController@makeBaseImage')->name('makeBaseImage');
+		});
+
+	/* Product Group Management */
+		Route::resource('product-groups', 'ProductGroupController', [
+		  	'only' => ['index', 'store', 'edit', 'update','destroy']
+		]);
+	/* Orders management */
+		Route::group( [ 'prefix' => '{OrderStatus}/', 'middleware' => 'setOrderStatus' ], function()
+		{
+			// Route::get('orders/','OrderController@index')->name('orders.index');
+			Route::resource('orders', 'OrderController', [
+			  	'only' => ['index','update','show']
+			]);
+			Route::post('post/bulk-update/orders/','OrderController@postBulkOrderUpdate')->name('postBulkOrderUpdate');
+			Route::get('downloud-invoice/{order}','OrderController@invoice')->name('invoiceDownloud');
+			Route::get('export-orders', 'OrderController@ordersExports')->name('ordersExports');
+			Route::post('post-order/exports/', 'OrderController@exportOrders')->name('exportOrders');
+		});
+	/* Discount Controller */
+		Route::group( [ 'prefix' => '{discountType}/', 'middleware' => 'SetDiscountType' ], function()
+		{
+			Route::resource('discounts', 'DiscountController', [
+			  	'only' => ['index', 'store', 'edit', 'update','destroy']
+			]);
+		});
+
+	/* Language Management */
+		Route::resource('languages','LanguageController');
+		
+	/* Blogs Management */
+		Route::resource('blogs','BlogController');
+
+		Route::get('configuration','AdminController@configuration')->name('config');
+	    
+});
+Route::group(['middleware' => ['setLanguage']], function () {
+    Route::get('set-language','HomeController@setLanguage')->name('setLanguageRoute');
+    Route::get('/', 'Controller@indexPage')->name('home');
+	Route::get('eco-products/{slug}/','FrontProductsController@productsList')->name('productsList');
+	Route::get('eco-product/{category?}/{slug}/','FrontProductsController@productFullView')->name('productFullView');
+	Route::view('about-us','about-us')->name('about-us');
+// 	Route::view('contact-us','contact')->name('contact');
+	Route::view('initiatives','csr-activities')->name('csr-activities');
+	Route::get("/contact-us", function(){
+	    $products = \App\ProductDetail::where('language_id',config('app.lang')->id)->get();
+      return view('contact',['products' => $products]);
+    })->name('contact');
+
+	Route::view('globe','globe')->name('globe');
+	Route::view('terms','terms')->name('terms');
+	Route::view('sustainablity','sustainablity')->name('sustainablity');
+	Route::view('coming_soon','coming_soon')->name('coming_soon');
+	Route::get('blog','HomeController@getBlogListing')->name('blog');
+	Route::get('blog-inside/{slug}','HomeController@getBlogInside')->name('blogInside');
+	
+	
+	Route::view('faq','faq')->name('faq');
+	Route::view('privacy','privacy')->name('privacy');
+	Route::view('refunds-and-returns','refunds-and-returns')->name('refunds-and-returns');
+	Route::get('north-america/{slug}/','FrontProductsController@northAmericaFullView')->name('northAmericaFullView');
+	Route::view('australia','australia')->name('australia');
+		Route::get('north-america-order-now','FrontProductsController@orderNorthNow')->name('orderNorthNow');
+		
+	Route::post('north-america-order-now','CartController@createOrder')->name('createOrder');
+	Route::get('payment-initiated','CartController@paymentInitiate')->name('paymentInitiate');
+	Route::post('payment-success','CartController@paymentStatus')->name('successPayment');
+	Route::get('payment-cancel','CartController@paymentStatus')->name('cancelPayment');
+	Route::get('manual/{categorySlug}/{productSlug}','HomeController@manualForm')->name('manualForm');
+	Route::get('thanku/{categorySlug}/{productSlug}','HomeController@getThanku')->name('thanku');
+	Route::get('downloud/manual/{product}','HomeController@manualDownloud')->name('downloudManual');
+	Route::get('/testing', function () {
+	   //     \Artisan::call('cache:clear');
+    //         \Artisan::call('config:clear');
+
+
+	   // dd('Test');
+        $newOrder = \App\Order::find(3);
+        $orderDetails = $newOrder->load(
+        ['userUsedDiscounts','user','orderProducts' => function($query) 
+            {
+                $query->with(['stock'=> function($query) 
+                {
+                    $query->with('product');
+                }]);
+            }
+        ]);
+        // $email = 'arindam@webmaddy.com';
+        $email = ['raju@webmaddy.com'];
+        $subject = 'Your order has been placed with ecotactbags';
+        $heading = "Order Successfully Placed";
+        $wrd = 'sasad';
+        view()->share(['order'=>$orderDetails,'wrd' => $wrd]);
+        $pdf = PDF::loadview('invoice');
+        // try{
+            \Mail::send('confirm_mail', ['order' => $newOrder,'heading' => $heading], function ($m) use ($email,$subject,$pdf) {
+                $m->to($email)->subject($subject);
+                $m->attachData($pdf->output(), 'invoice.pdf');
+            });
+        // }catch(\Exception $e){
+            
+        // }
+        return 11;
+    });
+	
+});
+Route::post('enquire-now','HomeController@enquireNow')->name('enquireNow');
+Route::post('post/comment','HomeController@postComment')->name('postComment');

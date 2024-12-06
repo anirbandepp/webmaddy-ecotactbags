@@ -1,0 +1,9 @@
+1. Route Page web.php is not properly coded
+2. Most of the blade files using core php
+   D:\Webmaddy\ecotactbags\resources\views\vendor\notifications\email.blade.php
+3. Most of the model does not follows the laravel guidelines
+4. The coding is on the web is not following laravel guidelines
+5. Migration & the db structure ( nothing is similar )
+
+
+https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/char/FMfcgzGrbcFSNlkVTHmdslWlQLfcBTst
